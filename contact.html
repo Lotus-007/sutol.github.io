@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<!-- for a Responsive website - add this code -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- I have used few w3 css codes which can be found only in w3schools, so i add their link here -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- give an external link for social media -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+	<!-- Css code -->
+
+	<style >
+		html,
+		  body {
+		     width: 100%;
+		     overflow-x: hidden; 
+		  }
+
+
+		 nav.navbar {
+		    background-color: #2e455b !important;
+		}
+		.navbar .nav-link {
+		      padding: .8rem 1rem;
+		      transition: color .2s ease;   
+
+		}
+		
+		*{
+		    font-family: 'Raleway', sans-serif;
+		 }		
+
+
+				/* Style inputs, select elements and textareas */
+		input[type=text], select, textarea{
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  resize: vertical;
+		}
+
+		/* Style the label to display next to the inputs */
+		label {
+		  padding: 12px 12px 12px 0;
+		  display: inline-block;
+		}
+
+		/* Style the submit button */
+		input[type=submit] {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: right;
+		}
+
+		/* Style the container */
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+
+		/* Floating column for labels: 25% width */
+		.col-25 {
+		  float: left;
+		  width: 25%;
+		  margin-top: 6px;
+		}
+
+		/* Floating column for inputs: 75% width */
+		.col-75 {
+		  float: left;
+		  width: 75%;
+		  margin-top: 6px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .col-25, .col-75, input[type=submit] {
+		    width: 100%;
+		    margin-top: 0;
+		  }
+		}
+
+
+   
+	</style>
+
+	<!-- narbar --> 
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	  <!-- Brand -->
+	  <a class="navbar-brand" href="index.html"> <h1 style="font-family: 'Aloritma', cursive; font-size: 200%">Sutol'S</h1> </a>
+
+	  <!-- Links -->
+	  
+	  <ul class="navbar-nav ml-auto">           <!-- ml stands for Margin Left -->
+	    <li class="nav-item">
+	      <a class="nav-link" href="index.html " style="font-family: 'Indie Flower', cursive; font-size: 150%">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="blog.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Blog</a>
+	    </li>
+	      <li class="nav-item">
+	      <a class="nav-link" href="gallery.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Gallery</a>
+	    </li>  <li class="nav-item">
+	      <a class="nav-link" href="contact.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Contact</a>
+	    </li>
+	     </li>  <li class="nav-item">
+	      <a class="nav-link" href="about.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">About</a>
+	    </li>
+
+	    <!-- search -->
+	    <nav>
+	      <form class="form-inline" action="/action_page.php">
+	       <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	       <button class="btn btn-success" type="submit">Search</button>
+	      </form>
+	    </nav>  
+	  </ul>
+	</nav>
+
+    <!-- narbar end -->
+
+
+  </head>
+
+
+  <body>
+	<section>
+		<br>
+		<br>
+		<h2 class="text-center pt-5"; style="font-family: 'Indie Flower', cursive; font-size: 300%">Contact Us</h2>
+		<h4 class="w3-center"><em>Drop us something.</em></h4>
+		  <hr class="w=50 mx-auto pt-5">
+		<!-- contact -->
+
+		<div class="container">
+		  <form action="action_page.php">
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="fname">First Name</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="lname">Last Name</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		      </div>
+		    </div>
+
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="lname">Email</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="text" id="lname" name="lastname" placeholder="Your email..">
+		      </div>
+		    </div>
+		    
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="subject">Feedback</label>
+		      </div>
+		      <div class="col-75">
+		        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		      </div>
+		    </div>
+		      <button class="w3-button w3-black w3-section" type="submit">
+		        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+		      </button>
+		  </form>
+		</div>
+
+
+
+
+	</section>
+
+
+
+  </body>
+
+        <!-- start footer -->
+
+	<br>
+	<br>
+
+  <footer>
+	  <section>
+	    <style>
+	      .footer {
+	        position: sticky;
+	        left: 0;
+	        bottom: 0;
+	        width: 100%;
+	        background-color: #2e455b;
+	        color: white;
+	        text-align: center;
+	        padding-top: 1%;
+	        padding-bottom: 1%;
+
+	        }
+	    </style>
+
+	    <div class="footer">
+	      <p style="font-family: 'Indie Flower', cursive; font-size: 150%" > All rights reserved. Copyright 2020</p>
+
+	           <!-- CSS code -->
+	          <style>
+	              .fa {
+	                padding: 15px;
+	                font-size: 15px;
+	                width: 50px;
+	                text-align: center;
+	                text-decoration: none;
+	                margin: 5px 2px;
+	                
+	              }
+
+	              .fa:hover {
+	                  opacity: 0.7;
+	              }
+
+	              .fa-facebook {
+	                background: #3B5998;
+	                color: white;
+	              }
+
+
+
+	              .fa-google {
+	                background: #dd4b39;
+	                color: white;
+	              }
+
+
+
+	              .fa-youtube {
+	                background: #bb0000;
+	                color: white;
+	              }
+
+	              .fa-instagram {
+	                background: #125688;
+	                color: white;
+	              }
+
+
+	          </style>
+
+
+	          <a href="https://www.facebook.com/profile.php?id=100004136028113" class="fa fa-facebook"></a>
+
+	          <a href="https://mail.google.com/mail/u/1/#inbox" class="fa fa-google"></a>
+
+	          <a href="https://www.youtube.com/watch?v=ioNng23DkIM" class="fa fa-youtube"></a>
+	          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+	          
+
+	    </div>
+	       
+
+
+
+	  </section>
+
+  </footer>
+
+
+</html>  

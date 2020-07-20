@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+      <!------------------------------------- CDM Links ------------------------------>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+      <!-- for a Responsive website - add this code -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- I have used few w3 css codes which can be found only in w3schools, so i add their link here -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <!-- give an external link for social media -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <!-- for google fonts - add this code -->
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+
+    <style>
+    /*---------- About us CSS--------------*/
+      html,
+        body {
+           width: 100%;
+           overflow-x: hidden; 
+        }
+
+       nav.navbar {
+        background-color: #2e455b !important;
+        }
+        .navbar .nav-link {
+              padding: .8rem 1rem;
+              transition: color .2s ease;   
+
+        }
+        *{
+            font-family: 'Raleway', sans-serif;
+         }    
+
+    </style>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html"> <h1 style="font-family: 'Aloritma', cursive; font-size: 200%">Sutol'S</h1> </a>
+
+        <!-- Links -->
+        
+        <ul class="navbar-nav ml-auto">           <!-- ml stands for Margin Left -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html " style="font-family: 'Indie Flower', cursive; font-size: 150%">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Blog</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Gallery</a>
+          </li>  <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">Contact</a>
+          </li>
+           </li>  <li class="nav-item">
+            <a class="nav-link" href="about.html" style="font-family: 'Indie Flower', cursive; font-size: 150%">About</a>
+          </li>
+
+          <!-- search -->
+          <nav>
+            <form class="form-inline" action="/action_page.php">
+             <input class="form-control mr-sm-2" type="text" placeholder="Search">
+             <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </nav>  
+        </ul>
+    </nav>
+
+        <!-- narbar end -->
+
+
+
+<!---------------------BLOG body starts here ------------------------------------------->
+
+<body class="w3-light-grey">
+
+    <!-- Navigation bar with social media icons -->
+    <div class="w3-bar w3-black w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-google"></i></a>
+
+      
+    </div>
+      
+    <!-- w3-content defines a container for fixed size centered content, 
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h2 class="w3-xxxlarge" style="font-family: 'Indie Flower', cursive; font-size: 300%"><b>Sutol's Bloglife</b></h2>
+        <h6 style="text-center pt-5"; style="font-family: 'Indie Flower', cursive; font-size: 300%"><em>Welcome to the blog of <strong> Sutol's world</strong></em></h6>
+      </header>
+
+      <!-- Image header -->
+      <header class="w3-display-container w3-wide" id="home">
+        <img class="w3-image" src="photo\b.png" alt="nature Blog" width="1600" height="1060">
+        <div class="w3-display-left w3-padding-large">
+          <h1 class="w3-text-white">Sutol</h1>
+          <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>PLANT BLOG</b></h1>
+          <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+        </div>
+      </header>
+
+      <!-- Grid -->
+      <div class="w3-row w3-padding w3-border">
+
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+        
+          <!-- Blog entry -->
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>VENUS FLYTRAP</h3>
+              <h5>How it grow, <span class="w3-opacity">March 8, 2020</span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <img src="photo\5_1.png" alt="trap" style="width:100%" class="w3-padding-16">
+              <p><strong>The Venus flytrap</strong>  is a small plant whose structure can be described as a rosette of four to seven leaves, which arise from a short subterranean stem that is actually a bulb-like object. Each stem reaches a maximum size of about three to ten centimeters, depending on the time of year;[24] longer leaves with robust traps are usually formed after flowering. Flytraps that have more than seven leaves are colonies formed by rosettes that have divided beneath the ground.</p>
+
+
+              <p>Illustration from Curtis's Botanical Magazine by William Curtis (1746–1799). The leaf blade is divided into two regions: a flat, heart-shaped photosynthesis-capable petiole, and a pair of terminal lobes hinged at the midrib, forming the trap which is the true leaf. The upper surface of these lobes contains red anthocyanin pigments and its edges secrete mucilage. The lobes exhibit rapid plant movements, snapping shut when stimulated by prey. The trapping mechanism is tripped when prey contacts one of the three hair-like trichomes that are found on the upper surface of each of the lobes. The mechanism is so highly specialized that it can distinguish between living prey and non-prey stimuli, such as falling raindrops.</p>
+              <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+              <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+              <p class="w3-clear"></p>
+              <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                <hr>
+                  <div class="w3-col l2 m3">
+                    <img src="photo\yamato.jpg" alt="yamato" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Yamato <span class="w3-opacity w3-medium">March 8, 2020, 6:32 PM</span></h4>
+                    <p>Great blog post! Following</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Blog entry -->
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>FAIRY CASTLE CACTUS</h3>
+              <h5>What is it? <span class="w3-opacity">Match 10, 2020</span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <img src="photo\cactus.png" alt="cactus" style="width:100%" class="w3-padding-16">
+              <p><strong>Fairy Castle Cactus</strong> Who knew a cactus could be whimsical? The varied stems resemble the turrets of a castle, making it the perfect addition to any whimsical garden. This slow-growing ...
+              <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+              <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+              <p class="w3-clear"></p>
+              
+              <!-- Example of comment field -->
+              <div id="demo2" style="display:none">
+                <div class="w3-row">
+                  <hr>
+                  <div class="w3-col l2 m3">
+                    <img src="photo\sai.jpg" alt="sai" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>SAI <span class="w3-opacity w3-medium">April 1, 2020, 10:52 PM</span></h4>
+                    <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin-bottom">
+                  <div class="w3-col l2 m3">
+                    <img src="photo\jiyong.jpg" alt="GD" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Jiyong <span class="w3-opacity w3-medium">June 23, 2020, 9:12 PM</span></h4>
+                    <p>Love hats!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog entry -->
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>STONELOTUS</h3>
+              <h5>How to plant it? <span class="w3-opacity">June 6, 2020</span></h5>
+            </div>
+
+            <div class="w3-justify">
+              <img src="photo\1.png" alt="sai" alt="Runway" style="width:100%" class="w3-padding-16">
+              <p><strong>Dont miss!</strong> How to grow lotus lotus meaning stone and stone - Tiny trees, almost no body. Small succulent leaves, leaves arranged in a rosette (such as lotus), looks very nice and pretty easy to grow xan..Sen rocky, evergreen. The leaves fall off the body can shoot at the root made into new trees. Axillary racemes on stalks that grow in length overall. Plants were grown in small pots to decorate the desk is very beautiful. This past flower is only ornamental, they are nearly identical to the cactus, but now, experts have used all kinds of flowers hardy flowers to decorate the place of residence, place of work.<br>
+
+              The shape of lovely little appropriate office furnishing, apartments, restaurants, hotels ... A unique gift and meaningful to your friends and your loved ones. Tree vigor, healthy and easy care, no need to water the tree daily..</p>
+              <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+              <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+              <p class="w3-clear"></p>
+              
+              <!-- Example of comment field -->
+              <div id="demo3" style="display:none">
+                <hr>
+                <div class="w3-row w3-margin-bottom">
+                  <div class="w3-col l2 m3">
+                    <img src="photo\mino.jpg" alt="mino" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>MINO <span class="w3-opacity w3-medium">June 10, 2020, 7:22 PM</span></h4>
+                    <p>That was a great runway show! Thanks for everything.</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin-bottom">
+                  <div class="w3-col l2 m3">
+                    <img src="photo\inojin.png" alt="inojin" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Inojin <span class="w3-opacity w3-medium">June 8, 2020, 10:32 PM</span></h4>
+                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  </div>
+                </div>
+                <div class="w3-row w3-margin-bottom">
+                  <div class="w3-col l2 m3">
+                    <img src="photo\itachi.jpg" alt="itachi" style="width:90px;">
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>Itachi Uchiha <span class="w3-opacity w3-medium">June 7, 2020, 9:12 PM</span></h4>
+                    <p>Cant wait for the runway to start!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- END BLOG ENTRIES -->
+        </div>
+
+        <!-- About/Information menu -->
+        <div class="w3-col l4">
+          <!-- About Card -->
+          <div class="w3-white w3-margin">
+            <img src="photo\008.jpg" alt="totoro" style="width:100%" class="w3-grayscale">
+            <div class="w3-container w3-black">
+              <h4>Boomshakalaka</h4>
+              <p>Big Totoro is thought to be King of the Forest. He often sleeps, and is the main Totoro, also being the logo for Studio Ghibli. He's voiced by Frank Welker in the Disney version.</p>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Posts -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Popular Posts</h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+                <img src="photo\010.jpg" alt="spirited" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">God of river</span>
+                <br>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="photo\012.jpg" alt="totoro" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">God of forest</span>
+                <br>
+              
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="photo\013.jpg" alt="mononoke" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Mononoke Hime</span>
+                <br>
+                
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="photo\020.jpg" alt="kiki" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">KiKi- Little witch</span>
+                <br>
+                
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </li>
+            </ul>
+          </div>
+          <hr>
+
+          <!-- Advertising -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Advertise</h4>
+            </div>
+            <div class="w3-container w3-white">
+              <!--<img src="Images 1303/r1.jpg" alt="Ad" class="w3-container w3-display-container w3-section">-->
+              <div class="w3-container w3-display-container  w3-section pb-1" style="height:250px">
+                <img src="photo\totogif.gif" alt="gif" class="img-fluid" style="height: 250px; max-width: 100%;" >
+
+               <!-- <span class="w3-display-middle">Your AD Here     w3-light-grey</span>-->
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Tags -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Tags</h4>
+            </div>
+            <br>
+            <div class="w3-container w3-white">
+              <p>
+                <span class="w3-tag w3-black w3-margin-bottom">Cactus</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Rosemary</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Stone Lotus</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Traps</span> 
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Inspiration -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Inspiration</h4>
+            </div>
+            <br>
+            <div class="w3-row-padding w3-white">
+              <div class="w3-col s6">
+                <p><img src="photo\01.png" alt="PLANT" style="width:100%"></p>
+                <p><img src="photo\02.png" alt="PLANT" style="width:100%"></p>
+              </div>
+              <div class="w3-col s6">
+                <p><img src="photo\3.png" alt="PLANT" style="width:100%" class="w3-grayscale"></p>
+                <p><img src="photo\4.png" alt="PLANT"style="width:100%"></p>
+             </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Follow Me</h4>
+            </div>
+            <div class="w3-container w3-xlarge w3-padding">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+              <i class="fa fa-instagram w3-hover-opacity"></i>
+              <i class="fa fa-google w3-hover-opacity"></i>
+              <i class="fa fa-youtube w3-hover-opacity"></i>
+
+            </div>
+          </div>
+          <hr>
+          
+          <!-- Subscribe -->
+          <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+              <h4>Subscribe</h4>
+            </div>
+            <div class="w3-container w3-white">
+              <br>
+              <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+              <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+            </div>
+          </div>
+
+        <!-- END About/Intro Menu -->
+        </div>
+
+      <!-- END GRID -->
+      </div>
+
+    <!-- END w3-content -->
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content" style="padding:32px">
+        <div class="w3-container w3-white">
+          <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+          <h2 class="w3-wide">SUBSCRIBE</h2>
+          <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+          <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "✓ Liked";
+    }
+    </script>
+
+</body>
+
+      <!-- start footer -->
+
+  <br>
+  <br>
+
+  <footer>
+    <section>
+      <style>
+        .footer {
+          position: sticky;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #2e455b;
+          color: white;
+          text-align: center;
+          padding-top: 1%;
+          padding-bottom: 1%;
+
+          }
+      </style>
+
+      <div class="footer">
+        <p style="font-family: 'Indie Flower', cursive; font-size: 150%" > All rights reserved. Copyright 2020</p>
+
+             <!-- CSS code -->
+            <style>
+                .fa {
+                  padding: 15px;
+                  font-size: 15px;
+                  width: 50px;
+                  text-align: center;
+                  text-decoration: none;
+                  margin: 5px 2px;
+                  
+                }
+
+                .fa:hover {
+                    opacity: 0.7;
+                }
+
+                .fa-facebook {
+                  background: #3B5998;
+                  color: white;
+                }
+
+
+
+                .fa-google {
+                  background: #dd4b39;
+                  color: white;
+                }
+
+
+
+                .fa-youtube {
+                  background: #bb0000;
+                  color: white;
+                }
+
+                .fa-instagram {
+                  background: #125688;
+                  color: white;
+                }
+
+
+            </style>
+
+
+            <a href="https://www.facebook.com/profile.php?id=100004136028113" class="fa fa-facebook"></a>
+
+            <a href="https://mail.google.com/mail/u/1/#inbox" class="fa fa-google"></a>
+
+            <a href="https://www.youtube.com/watch?v=ioNng23DkIM" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            
+
+      </div>
+         
+
+
+
+    </section>
+
+  </footer>
+
+
+
+</html>
